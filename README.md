@@ -17,7 +17,7 @@ This project is a Book Inventory Management System that allows users to manage a
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL (or any relational database)
-- **Deployment**: Vercel
+- **Deployment**: Heroku
 
 ## Setup Instructions
 
