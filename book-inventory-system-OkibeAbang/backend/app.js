@@ -14,7 +14,7 @@ app.use(bodyParser.json()); // Parse JSON bodies
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Nkerebobo1+++',
+    password: `your_password`, //Replace this with your password
     database: 'book_inventory'
 });
 
