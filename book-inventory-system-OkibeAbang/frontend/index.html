@@ -1,0 +1,72 @@
+<!-- index.html: Main HTML structure for the UI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book Inventory System</h1>
+
+    <!-- Add New Book Form -->
+    <h2>Add New Book</h2>
+    <form id="addBookForm">
+        <input type="text" id="title" placeholder="Title" required><br>
+        <input type="text" id="author" placeholder="Author" required><br>
+        <input type="text" id="genre" placeholder="Genre"><br>
+        <input type="date" id="publication_date" required><br>
+        <input type="text" id="isbn" placeholder="ISBN" required><br>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Filter Books -->
+    <h2>Filter Books</h2>
+    <form id="filterForm">
+        <input type="text" id="filterTitle" placeholder="Title">
+        <input type="text" id="filterAuthor" placeholder="Author">
+        <input type="text" id="filterGenre" placeholder="Genre">
+        <input type="date" id="filterDate"><br>
+        <button type="submit">Filter</button>
+        
+    </form>
+
+    <h2>Filtered Book List</h2>
+        <table id="filteredBookTable" border="1">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Publication Date</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filtered books will be inserted here -->
+            </tbody>
+        </table>
+    
+
+    <!-- Display Books -->
+    <h2>Book List</h2>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication Date</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Export Button -->
+    <button id="exportButton">Export Data</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
